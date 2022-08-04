@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Polls App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script s<script src="https://kit.fontawesome.com/4c3db8efab.js" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='./static/css/style.css'>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-div left-div">
+            <div class="upper-div animated">
+                <ul>
+                    <li><h1 class="logo">p</h1></li>
+                </ul>
+                    <div class="social-container">
+
+                        <a href="#" class="social-icon elevated">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon elevated">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon elevated">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                    </div>
+            </div>
+            <div class="lower-div">
+                <div class="gooey-wrapper">
+
+                    <div class="gooey">
+                        <span class="dot"></span>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-div mid-div animated">
+            <div class="footer-div">
+                <h5>Designed and created by Ellipcion.</h5>
+            </div>
+            <div class="crystal-div">
+                <div class="crystal">
+                </div>
+            </div>
+            <div class="text">
+                <h1>P<span>olls</span></h1>
+                <p>Django <a href="https://docs.djangoproject.com/en/4.0/intro/tutorial01/" target="blank">polls</a> app on steroids</p>
+            </div>
+        </div>
+        <div class="flex-div right-div">
+                <!-- <div class="title-div">
+                    <h2></h2>
+                    <a class="vote-tag" href="#">Home</a>
+                </div> -->
+                <div class="poll-detail ">
+                        <!-- <div class="poll">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ducimus! Pariatur modi qui hic ratione tenetur vero, asperiores maiores ullam fugit accusantium harum facilis maxime eligendi beatae, temporibus sit consequuntur?</p>
+                        </div>
+                        
+                            <form action="{% url 'polls:vote' question.id %}" method="POST">
+
+                                <div class="wrapper">
+                                    <input type="radio" class="state" name="choice" id="choice{{ forloop.counter }}"
+                                        value="{{ choice.id }}">
+                                    <label class="label" for="choice{{ forloop.counter }}">
+                                        <div class="indicator"></div>
+                                        <span class="text">Hello</span>
+                                    </label>
+                                </div>
+                    
+                                 <input class="submitbtn" type="submit" value="vote">
+                    
+                            </form>
+                    
+                        </div> -->
+                        <div class="radiogroup">
+                            <div class="question">
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cum molestias illum harum facilis corporis sint, eum iure eveniet a neque accusantium, veniam assumenda cupiditate temporibus laudantium quam unde ipsa!</h2>
+                                <!-- {% if error_message %} <P><strong> {{ error_message }} </strong></P> {% endif %} -->
+                            </div>
+                    
+                    
+                    
+                    
+                            <form action="{% url 'polls:vote' question.id %}" method="POST">
+                                <!-- {% csrf_token %} -->
+                                <!-- {% for choice in question.choice_set.all %} -->
+                                <div class="wrapper">
+                                    <input type="radio" class="state" name="choice" id="choice{{ forloop.counter }}"
+                                        value="{{ choice.id }}">
+                                    <label class="label" for="choice{{ forloop.counter }}">
+                                        <div class="indicator"></div>
+                                        <span class="option">hello</span>
+                                    </label>
+                                </div>
+                                <div class="wrapper">
+                                    <input type="radio" class="state" name="choice" id="choice{{ forloop.counter }}"
+                                        value="{{ choice.id }}">
+                                    <label class="label" for="choice{{ forloop.counter }}">
+                                        <div class="indicator"></div>
+                                        <span class="option">hello</span>
+                                    </label>
+                                </div>
+                                <!-- {% endfor %} -->
+                    
+                                <input class="submitbtn" type="submit" value="vote">
+                    
+                            </form>
+                    
+                        </div>
+                
+                    <!-- <div class="space-div poll"></div> -->
+                    <!-- <div class="fade-wrapper"></div> -->
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src='./static/js/script.js'></script>
+</body>
+</html>
